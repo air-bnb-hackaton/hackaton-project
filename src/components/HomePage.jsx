@@ -1,12 +1,16 @@
 import React from "react";
+import Search from "./Search";
+import Navbar from "./Navbar";
 
 class HomePage extends React.Component {
   state = { someKey: "someValue" };
-
   render() {
     return (
       <div className="home-page">
-        <h1>This is the home Page</h1>
+        <div className="container-fluid">
+          <Navbar/>
+          <Search />
+        </div>
       </div>
     );
   }
