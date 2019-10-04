@@ -1,4 +1,5 @@
 import React from "react";
+import SearchNav from "./SearchNav";
 
 class ListingPage extends React.Component {
   state = { someKey: "someValue" };
@@ -6,7 +7,8 @@ class ListingPage extends React.Component {
   render() {
     return (
         <div className="listing-page">
-            <h1>This is the listing page</h1>
+            <SearchNav/>
+            <h1>ajsiogjawg</h1>
         </div>
     );
   }

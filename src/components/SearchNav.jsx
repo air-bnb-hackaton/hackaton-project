@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-class Navbar extends React.Component {
+class SearchNav extends React.Component {
   state = { someKey: "someValue" };
 
   render() {
@@ -21,7 +21,24 @@ class Navbar extends React.Component {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <form className="form-inline my-2 my-lg-0">
+          <input
+            className="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            className="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
           <ul className="navbar-nav">
             <Link className="nav-link" to="/details">
               <li className="nav-item active">Details </li>
@@ -40,4 +57,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar;
+export default SearchNav;
