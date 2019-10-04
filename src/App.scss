@@ -12,7 +12,6 @@
 .App h1 {
   color: aqua;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -29,7 +28,6 @@
 }
 
 .navbar {
-
   .navbar-brand,
   .nav-link {
     font-size: 16px;
@@ -37,7 +35,6 @@
     color: white;
     margin: auto 15px;
   }
-
   .navbar-brand:hover,
   .nav-link:hover {
     text-decoration: underline;
@@ -346,12 +343,10 @@
   padding: 50px 0px 50px;
   font-size: 20px;
   border-radius: 5px;
-
   h1 {
     font-size: 30px;
     font-weight: bolder;
   }
-
   p {
     font-size: 14px;
     font-weight: bold;
@@ -366,7 +361,6 @@
     height: 45px;
     padding: 10px 5px;
   }
-
   .btn {
     height: 25%;
     width: 25%;
@@ -380,4 +374,66 @@
   .container-fluid {
     width: 90%;
   }
+}
+  
+.listing-page {
+  .filters-bar {
+    box-sizing: border-box;
+    width: 100%;
+    border: 0.5px solid #E4E4E4;
+  
+  }
+  
+  .filters-bar ul {
+    margin: 10px 0 10px 0px;
+    padding: 5px 0px 5px 15px;
+  }
+
+
+.filters-bar button {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: normal;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    text-transform: undefined;
+    color: #484848;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background: none;
+    border: 1px solid #dce0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+}
+  
+.navbar-expand-lg {
+    width: 100%;
+    height: 60px;
+}
+
+.page-content{
+    display: flex;
+    flex-direction: row;
+}
+.listings {
+    width: 65%;
+    border: solid black;
+    height: 80vh;
+}
+
+.map {
+    width: 45%;
+    border: solid black;
+    height: 80vh;
+}
+.map img{
+  height: 150px;
+
+}
 }

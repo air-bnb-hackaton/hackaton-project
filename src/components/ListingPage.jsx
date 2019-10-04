@@ -1,114 +1,101 @@
 import React from "react";
-import Views from './Views'
-import SearchNav from "./SearchNav";
 
 class ListingPage extends React.Component {
-  state = { 
-    someKey: "someValue",
-    reviewsopen: true,
-  
+  state = {
+    someKey: "someValue"
   };
 
-
-
-  showListing = () =>{
-    return(
-      <div className="listingInfo">
-        <div className="listingProfile">
-            <h2>Listing Name Goes Here</h2>
-            <img width='64' height="64" src="https://icon-library.net/images/icon-profile/icon-profile-0.jpg" alt="Temp Pic" />
-            <button>Hub-Verified ✔</button>
-        </div>
-        <div className="activity">
-          
-          <div className='activities'>
-            <img width="32" height="32" src="https://image.flaticon.com/icons/png/512/18/18436.png" alt="qm" />
-            <p>POI #1</p>
+  showListings = () => {
+    return (
+      <div className="actual-listings">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol className="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img className="d-block w-100" src="../listing1/img1.png" alt="First slide" />
+            </div>
+            <div className="carousel-item">
+              <img className="d-block w-100" src="../listing1/img2.png" alt="Second slide" />
+            </div>
+            <div className="carousel-item">
+              <img className="d-block w-100" src="../listing1/img3.png" alt="Third slide" />
+            </div>
           </div>
-          <div className='activities'>
-            <img width="32" height="32" src="https://image.flaticon.com/icons/png/512/18/18436.png" alt="qm" />
-            <p>POI #2</p>
-          </div>
-          <div className='activities'>
-            <img width="32" height="32" src="https://image.flaticon.com/icons/png/512/18/18436.png" alt="qm" />
-            <p>POI #3</p>
-          </div>
-          
+          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
+          </a>
+          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
+          </a>
         </div>
-        <div className="reviews">
-        <div className="space">
-            <h3 >reviews</h3>
+        <div>
+          <h2>Title</h2>
+          <h3>Description</h3>
+          <p>Features</p>
+          <p>Price</p>
         </div>
-            <img className="space1" width="20" height="20" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/A_Black_Star.png" alt="stars" />
-            <img className="space1" width="20" height="20" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/A_Black_Star.png" alt="stars" />
-            <img className="space1" width="20" height="20" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/A_Black_Star.png" alt="stars" />
-            <img className="space1" width="20" height="20" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/A_Black_Star.png" alt="stars" />
-            <img className="space1" width="20" height="20" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/A_Black_Star.png" alt="stars" />
-        </div>
-        <div className="neighborhood">
-          <h3>Neighborhood goes here</h3>
-        <div className="neighborhoodName">
-          <p>This is where the info of the Neighborhood goes.
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-            <button>See More    -></button>
-        </div>
-        <div></div>
       </div>
     )
   }
 
-  showHost = () =>{
-    return(
-      <div className="hostBox">
-        <h4>Host Info Goes Here</h4>
-        <hr></hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <button>Contact</button>
-      </div>
-    )
-  }
-
-  reserve = () =>{
-    return(
-      <div className="reserve">
-        <button>Reserve</button>
-      </div>
-    )
-  }
-
-  showCarousel = ()=>{
-    return(
+  showMap = () => {
+    return (
       <div>
-  
+        {/* {SimpleMap} */}
+      </div>
+    )
+  }
+  pageContent = () => {
+    return (
+      <div className="page-content">
+        <div class="row">
+          <div class="col-8">{this.showListings()}</div>
+          <div class="col-4">{this.showMap()}</div>
+
+        </div>
       </div>
     )
   }
 
-  
+  filterBar = () => {
+    return (
+      <div className="filters-bar">
+        <nav className="navbar navbar-expand-lg">
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item active">
+                <a className="nav-link" href="/"><button className="nav-link">Dates</button></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/"><button className="nav-link">Guests</button></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="'/"><button className="nav-link">Work Trip</button></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/"><button className="nav-link">Type of Price</button></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    )
+  }
+
   render() {
     return (
       <div className="listing-page">
-      <div className="background">
-        <SearchNav/>
-            <div className='car'>
-            <Views/>
-            </div>
-      <div className="whole">
-        <div className="listing-page">
-            {this.showListing()}
-        </div>
-        <div className="host">
-        {this.showHost()}
-        </div>
-        <div className="reserved">
-        {this.reserve()}
-        </div>
-        </div>
-        </div>
+        <div>{this.filterBar()}</div>
+        <div>{this.pageContent()}</div>
       </div>
     );
   }
