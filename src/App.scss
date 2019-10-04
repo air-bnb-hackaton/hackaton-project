@@ -30,7 +30,10 @@
 .navbar {
   .navbar-brand,
   .nav-link {
+    font-size: 16px;
+    font-weight: bold;
     color: white;
+    margin: auto 15px;
   }
   .navbar-brand:hover,
   .nav-link:hover {
@@ -44,7 +47,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("https://images.unsplash.com/photo-1559767949-0faa5c7e9992?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+
+  background-image: linear-gradient(rgba(black, 0.2), rgba(black, 0.2)), url("https://images.unsplash.com/photo-1559767949-0faa5c7e9992?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
   .container-fluid {
     width: 90%;
   }
@@ -74,9 +78,12 @@
     border: #c9c9c9 1px solid;
     width: 100%;
     height: 45px;
-    padding:10px 10px;
+    padding:10px 5px;
   }
   .btn{
+    height: 25%;
+    width: 25%;
+    margin-top: 20px;
     justify-self: center;
     font-weight: bolder;
     color: white;
