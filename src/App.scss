@@ -1,11 +1,17 @@
 .App {
   text-align: center;
+  color: white;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
 }
 
 .App-logo {
   height: 40vmin;
 }
 
+.App h1 {
+  color: aqua;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

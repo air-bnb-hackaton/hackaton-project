@@ -2,10 +2,27 @@
 
 ![programming](https://user-images.githubusercontent.com/22354639/65000732-b002c900-d8ba-11e9-93dd-ac505f09ac7c.gif)
 
-Hi all!
+# Ironhack Hackathon! Yay!!!
 
-I'm scared and glad that we're doing this because we all know how programming is :grimacing::weary:Let's just say it's a lot like this picture. Exactly like it actually. I just hope we can push ourselves and each other through it.
+Errorbnb is a project inspired by Ironhack Miami’s Hackathon, where our team of 7 is tasked to redesign and develop a Full-Stack application based on Airbnb’s site. We will be reimagining the filters landing page and the details listing page. The main focus of the project is to bring together the UX/UI designers, web developers and data scientists by designing, researching, developing, and deploying a revamped version of the site.
 
-So, first thing's first, we already created our GitHub repo for this project. Good job!
+# Setup
+### Installation
+*   Clone the repo
+*   Install the server dependencies with: ```npm install```
+*   Run the local server using ```npm start```
+*   Open ```http://localhost:3000``` and Have fun!
 
-git add > git commit -m "message" > git pull > git push
+# Team:
+- *Developer:* [Adrian Vesnieski](https://github.com/adriansdk)
+- *Developer:* [Elba Chimilio](https://github.com/elba3184)
+- *Developer:* [Cole Mooney](https://github.com/colemooney)
+- *Developer:* [Christian Roque](https://github.com/ChristianRoque)
+
+- *Designer:* [Georgette Chedra](https://www.linkedin.com/in/georgette-/)
+- *Designer:* [Stephanie Bien Aime](https://www.linkedin.com/in/stephanie-bien-aime/)
+- *Designer:* [Anais Aguero](https://www.linkedin.com/in/anaisaguero/)
+
+- *Data Analyst:* [Renzo Barrantes](https://www.linkedin.com/in/notlorenzo/)
+
+
