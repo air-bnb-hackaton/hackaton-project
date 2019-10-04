@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo-white.png'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 class Navbar extends React.Component {
@@ -9,7 +9,7 @@ class Navbar extends React.Component {
     return (
       <nav className="navbar navbar-expand-lg fixed-top">
         <Link className="navbar-brand" to="/">
-          <img height="60px" width="auto"src={Logo}></img>
+          <img height="40px" width="auto"src={Logo}></img>
         </Link>
         <button
           className="navbar-toggler"
