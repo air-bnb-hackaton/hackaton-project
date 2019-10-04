@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import Navbar from './components/Navbar'
-import './App.css';
+import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Switch } from 'react-router-dom'
 import HomePage from './components/HomePage'
