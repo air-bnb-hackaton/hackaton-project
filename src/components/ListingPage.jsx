@@ -1,6 +1,6 @@
 import React from "react";
-import './listing.css';
 import Views from './Views'
+import SearchNav from "./SearchNav";
 
 class ListingPage extends React.Component {
   state = { 
@@ -91,7 +91,9 @@ class ListingPage extends React.Component {
   
   render() {
     return (
+      <div className="listing-page">
       <div className="background">
+        <SearchNav/>
             <div className='car'>
             <Views/>
             </div>
@@ -107,6 +109,7 @@ class ListingPage extends React.Component {
         </div>
         </div>
         </div>
+      </div>
     );
   }
 
