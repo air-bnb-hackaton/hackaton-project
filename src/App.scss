@@ -1,30 +1,100 @@
 .App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+  text-align: center;
+  color: white;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App h1 {
+  color: aqua;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.navbar {
+  .navbar-brand,
+  .nav-link {
+    font-size: 16px;
+    font-weight: bold;
     color: white;
+    margin: auto 15px;
   }
-  
-  .App-link {
-    color: #09d3ac;
+  .navbar-brand:hover,
+  .nav-link:hover {
+    text-decoration: underline;
+    text-underline-position: under;
   }
-  
-  .navbar.navbar-expland-lg {
-    padding-left: 0px;
+}
+
+.home-page {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-image: linear-gradient(rgba(black, 0.2), rgba(black, 0.2)), url("https://images.unsplash.com/photo-1559767949-0faa5c7e9992?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  .container-fluid {
+    width: 90%;
   }
+}
+
+.search {
+  top: 100px;
+  position: absolute;
+  color: rgb(72, 72, 72);
+  background-color: white;
+  width: 30%;
+  padding: 50px 0px 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  h1{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  p{
+    font-size: 14px;
+    font-weight: bold;  
+    margin-bottom: 5px;
+
+  }
+  input{
+    border-radius: 3px;
+    border: #c9c9c9 1px solid;
+    width: 100%;
+    height: 45px;
+    padding:10px 5px;
+  }
+  .btn{
+    height: 25%;
+    width: 25%;
+    margin-top: 20px;
+    justify-self: center;
+    font-weight: bolder;
+    color: white;
+    background-color:#FF5A5F;
+  }
+  .container-fluid {
+    width: 90%;
+  }
+}
   
+.listing-page {
   .filters-bar {
     box-sizing: border-box;
     width: 100%;
@@ -34,7 +104,7 @@
   
   .filters-bar ul {
     margin: 10px 0 10px 0px;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 0px 5px 15px;
   }
 
 
@@ -72,24 +142,16 @@
 .listings {
     width: 65%;
     border: solid black;
-    height: 100vh;
+    height: 80vh;
 }
 
 .map {
     width: 45%;
-    height: 100vh;
+    border: solid black;
+    height: 80vh;
 }
-
 .map img{
-  height: 640px;
-  width: 600px;
-}
+  height: 150px;
 
-.actual-listings {
-  display: flex;
 }
-
-.d-block.w-100{
-  // width: 30px;
-  height: 185px;
 }

@@ -12,7 +12,6 @@ import DetailsPage from './components/DetailsPage';
 function App() {
   return (
     <div className="root">
-      <Navbar />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/listing" component={ListingPage} />
