@@ -50,6 +50,18 @@
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   }
 
+  .expand{
+    // display: flex;
+    // flex-direction: column-reverse;
+    margin: 6% 0% 0% -39%
+  }
+
+  .expands button{
+    height: 25px;
+    margin: 7% 0% 0% 40%;
+    border-radius: 4px;
+  }
+
   html {
     height: 100vh;
     width: 100vw;
