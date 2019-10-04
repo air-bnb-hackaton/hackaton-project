@@ -1,0 +1,69 @@
+.listing-page {
+    .navbar {
+      .navbar-brand,
+      .nav-link {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(72, 72, 72);
+        margin: auto 15px;
+      }
+      .navbar-brand:hover,
+      .nav-link:hover {
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+    }
+    .filters-bar {
+      box-sizing: border-box;
+      width: 100%;
+      border: 0.5px solid #e4e4e4;
+    }
+    .filters-bar ul {
+      margin: 10px 0 10px 0px;
+      padding: 5px 0px 5px 15px;
+    }
+    .filters-bar button {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: normal;
+      font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+        Helvetica Neue, sans-serif;
+      text-transform: undefined;
+      color: #484848;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      background: none;
+      border: 1px solid #dce0e0;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-block;
+      padding-left: 12px;
+      padding-right: 12px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      width: auto;
+    }
+    .navbar-expand-lg {
+      width: 100%;
+      height: 60px;
+    }
+    .page-content {
+      display: flex;
+      flex-direction: row;
+    }
+    .listings {
+      width: 65%;
+      border: solid black;
+      height: 80vh;
+    }
+    .map {
+      width: 45%;
+      border: solid black;
+      height: 80vh;
+    }
+    .map img {
+      height: 150px;
+    }
+  }
+  

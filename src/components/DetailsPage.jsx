@@ -1,6 +1,7 @@
 import React from "react";
 import Views from './Views'
 import SearchNav from "./SearchNav";
+import "./DetailsPage.scss";
 
 class DetailsPage extends React.Component {
   state = { 
@@ -8,9 +9,7 @@ class DetailsPage extends React.Component {
     reviewsopen: true,
   
   };
-
-
-
+  
   showListing = () =>{
     return(
       <div className="listingInfo">

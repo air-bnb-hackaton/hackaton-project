@@ -1,6 +1,7 @@
 import React from "react";
 import Search from "./Search";
 import Navbar from "./Navbar";
+import "./HomePage.scss";
 
 class HomePage extends React.Component {
   state = { someKey: "someValue" };

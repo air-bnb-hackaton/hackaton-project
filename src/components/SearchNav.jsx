@@ -6,7 +6,7 @@ class SearchNav extends React.Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg fixed-top">
+      <nav className="navbar navbar-expand-lg">
         <Link className="navbar-brand" to="/">
           Home
         </Link>
