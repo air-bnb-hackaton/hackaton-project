@@ -1,15 +1,20 @@
 import React from "react";
 import SearchNav from "./SearchNav";
+import Views from './Views'
 
 class ListingPage extends React.Component {
-  state = { someKey: "someValue" };
+  state = {
+    someKey: "someValue",
+    reviewsopen: true
+  };
+
+  
 
   render() {
     return (
-        <div className="listing-page">
-            <SearchNav/>
-            <h1>ajsiogjawg</h1>
-        </div>
+      <div className="listing-page">
+       <SearchNav/>
+      </div>
     );
   }
 
