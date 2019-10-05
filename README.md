@@ -17,7 +17,6 @@ Errorbnb is a project inspired by Ironhack Miami’s Hackathon, where our team o
 - *Developer:* [Adrian Vesnieski](https://github.com/adriansdk)
 - *Developer:* [Elba Chimilio](https://github.com/elba3184)
 - *Developer:* [Cole Mooney](https://github.com/colemooney)
-- *Developer:* [Christian Roque](https://github.com/ChristianRoque)
 
 - *Designer:* [Georgette Chedra](https://www.linkedin.com/in/georgette-/)
 - *Designer:* [Stephanie Bien Aime](https://www.linkedin.com/in/stephanie-bien-aime/)
